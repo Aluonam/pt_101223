@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import ChangeColor from '@/components/ChangeColor'
 import InputDeleteWords from '@/components/InputDeleteWords'
+import DeleteFirstWord from '@/components/DeleteFirstWord'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <br/>
         <InputDeleteWords></InputDeleteWords>
         <br/>
+        <DeleteFirstWord></DeleteFirstWord>
       </main>
     </>
   )
