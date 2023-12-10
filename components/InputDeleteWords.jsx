@@ -3,12 +3,13 @@ import React, { useState } from 'react'
 const InputDeleteWords = () => {
 
     const [dataInput, setDataInput] = useState([]);
+    const [newSentence, setNewSentence] = useState()
 
     const handleDelete = ()=>{
         const newArr = structuredClone(dataInput.split(" "))
         const noRepeat = [...new Set(newArr)]
 
-        console.log(noRepeat.join(" "))
+        setNewSentence(noRepeat.join(" "))
     }
   return (
     <div>
@@ -16,6 +17,8 @@ const InputDeleteWords = () => {
         <input onChange={(e)=>{setDataInput(e.target.value)}}></input>
         <br/>
         <button onClick={()=>{handleDelete()}}>Delete</button>
+        <br/>
+        {newSentence}
     </div>
   )
 }
