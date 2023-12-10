@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const DeleteFirstWord = () => {
+
+    const [inputSentence, setInputSentence] = useState([])
   return (
     <div>
         <h3>Delete first word</h3>
-        <input onChange={(e)=>{e.target.value}}></input>
+        {inputSentence}
+        <input onChange={(e)=>{setInputSentence(e.target.value)}}></input>
         <button onClick={()=>{}}>Delete</button>
     </div>
   )
