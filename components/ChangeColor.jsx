@@ -9,7 +9,7 @@ const ChangeColor = () => {
     <div>
         {colorSelected}
         <input type='color' onChange={(e)=>{setColorSelected(e.target.value)}}></input>
-        <ButtonModalANT></ButtonModalANT>
+        <ButtonModalANT colorSelected={colorSelected}></ButtonModalANT>
     </div>
   )
 }

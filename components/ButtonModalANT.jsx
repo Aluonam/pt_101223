@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 
-const ButtonModalANT = () => {
+const ButtonModalANT = ({colorSelected}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -19,7 +19,7 @@ const ButtonModalANT = () => {
         Show color
       </Button>
       <Modal title="The selected color is:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <div style={{width:"300px", height:"100px", backgroundColor:"blue"}}>Aqui va el color</div>
+        <div style={{width:"300px", height:"100px", backgroundColor:`${colorSelected}`}}>Aqui va el color</div>
       </Modal>
     </>
   );
