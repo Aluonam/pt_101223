@@ -8,7 +8,6 @@ const InputDeleteWords = () => {
     const handleDelete = ()=>{
         const newArr = structuredClone(dataInput.split(" "))
         const noRepeat = [...new Set(newArr)]
-
         setNewSentence(noRepeat.join(" "))
     }
   return (

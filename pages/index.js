@@ -14,7 +14,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <ChangeColor></ChangeColor>
+        <br/>
         <InputDeleteWords></InputDeleteWords>
+        <br/>
       </main>
     </>
   )
