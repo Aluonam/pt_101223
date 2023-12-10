@@ -6,7 +6,8 @@ const ChangeColor = () => {
 
   return (
     <div>
-        <input type='color' onChange={(e)=>{console.log(e.target.value)}}></input>
+        {colorSelected}
+        <input type='color' onChange={(e)=>{setColorSelected(e.target.value)}}></input>
     </div>
   )
 }
