@@ -19,7 +19,7 @@ const ButtonModalANT = ({colorSelected}) => {
         Show color
       </Button>
       <Modal title="The selected color is:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <div style={{width:"300px", height:"100px", backgroundColor:`${colorSelected}`}}>Aqui va el color</div>
+        <div style={{width:"90%", height:"100px", backgroundColor:`${colorSelected}`}}></div>
       </Modal>
     </>
   );

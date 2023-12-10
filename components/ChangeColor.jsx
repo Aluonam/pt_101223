@@ -7,7 +7,6 @@ const ChangeColor = () => {
 
   return (
     <div>
-        {colorSelected}
         <input type='color' onChange={(e)=>{setColorSelected(e.target.value)}}></input>
         <ButtonModalANT colorSelected={colorSelected}></ButtonModalANT>
     </div>
