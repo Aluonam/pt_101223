@@ -5,7 +5,10 @@ const InputDeleteWords = () => {
     const [dataInput, setDataInput] = useState([]);
 
     const handleDelete = ()=>{
-        console.log(dataInput)
+        const newArr = structuredClone(dataInput.split(" "))
+        const noRepeat = [...new Set(newArr)]
+
+        console.log(noRepeat.join(" "))
     }
   return (
     <div>
