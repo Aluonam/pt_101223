@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ButtonModalANT from './ButtonModalANT'
 
 const ChangeColor = () => {
 
@@ -8,6 +9,7 @@ const ChangeColor = () => {
     <div>
         {colorSelected}
         <input type='color' onChange={(e)=>{setColorSelected(e.target.value)}}></input>
+        <ButtonModalANT></ButtonModalANT>
     </div>
   )
 }
