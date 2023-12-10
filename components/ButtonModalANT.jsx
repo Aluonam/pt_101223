@@ -16,12 +16,10 @@ const ButtonModalANT = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Show color
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Modal title="The selected color is:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <div>Aqui va el color</div>
       </Modal>
     </>
   );
