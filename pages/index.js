@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import ChangeColor from '@/components/ChangeColor'
+import InputDeleteWords from '@/components/InputDeleteWords'
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <ChangeColor></ChangeColor>
+        <br/>
+        <InputDeleteWords></InputDeleteWords>
+        <br/>
       </main>
     </>
   )
